@@ -1,0 +1,24 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Development\/Ash\/yeoman\/angexpcopy\/app\/styles\/main\.scss}line{font-family:\000031}}
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Development\/Ash\/yeoman\/angexpcopy\/app\/styles\/main\.scss}line{font-family:\000037}}
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Development\/Ash\/yeoman\/angexpcopy\/app\/styles\/main\.scss}line{font-family:\0000316}}
+.hero-unit h1 {
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
