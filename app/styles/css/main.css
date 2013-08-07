@@ -1,24 +1,161 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Development\/Ash\/yeoman\/angexpcopy\/app\/styles\/main\.scss}line{font-family:\000031}}
-body {
-  background: #fafafa;
+@media all and (max-width: 1600px) and (min-width: 1400px) {
+  /* line 3, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block, body .body-block {
+    margin-left: 5%;
+  }
+}
+@media all and (max-width: 1441px) {
+  /* line 11, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block {
+    margin-left: 24px;
+  }
+  /* line 14, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .body-block {
+    margin-left: 24px;
+  }
+}
+@media all and (max-width: 1380px) and (min-width: 767px) {
+  /* line 22, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block {
+    margin-left: 6%;
+  }
+  /* line 25, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .body-block {
+    margin-left: 6%;
+  }
+}
+@media all and (max-width: 1080px) {
+  /* line 33, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block {
+    margin-left: 24px;
+    width: 240px;
+  }
+  /* line 37, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .body-block {
+    margin-left: 24px;
+    padding-left: 270px;
+  }
+}
+@media all and (max-width: 900px) {
+  /* line 46, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block {
+    margin: 0px;
+    width: 200px;
+  }
+  /* line 50, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .body-block {
+    margin: 0px 20px;
+    padding-left: 200px;
+  }
+}
+@media all and (max-width: 767px) and (min-width: 640px) {
+  /* line 59, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block {
+    display: none;
+  }
+  /* line 62, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .body-block {
+    padding: 0;
+  }
+}
+@media all and (max-width: 1380px) {
+  /* line 70, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .aside-block {
+    position: relative;
+    padding: 0;
+  }
+}
+@media all and (max-width: 640px) {
+  /* line 79, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .nav-block {
+    display: none;
+  }
+  /* line 82, /Volumes/Development/Ash/mysite/app/styles/mediaqueries.scss */
+  body .body-block {
+    padding: 0;
+  }
+}
+/* line 4, ../main.scss */
+.container {
+  background-color: #eaeaea;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Development\/Ash\/yeoman\/angexpcopy\/app\/styles\/main\.scss}line{font-family:\000037}}
-.hero-unit {
-  margin: 50px auto 0 auto;
+/* line 11, ../main.scss */
+.nav-block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 24px;
+  margin-left: 11%;
   width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 2.5em;
+  color: #888;
+  line-height: 1.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Volumes\/Development\/Ash\/yeoman\/angexpcopy\/app\/styles\/main\.scss}line{font-family:\0000316}}
-.hero-unit h1 {
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: -1px;
+/* line 29, ../main.scss */
+.nav-block .nav-block-inner {
+  padding: 18px;
+}
+
+/* line 37, ../main.scss */
+.body-block {
+  margin: 24px;
+  margin-left: 11%;
+  padding-left: 330px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/* line 44, ../main.scss */
+.body-block-content {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+  max-width: 700px;
+  min-height: 1700px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 56, ../main.scss */
+.aside-block {
+  display: inline-block;
+  position: absolute;
+  top: 24px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 600px;
+  padding-left: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }

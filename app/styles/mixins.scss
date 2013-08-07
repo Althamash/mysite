@@ -1,0 +1,23 @@
+@mixin clearfix {
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  -ms-box-sizing: $value;
+  -o-box-sizing: $value;
+  box-sizing: $value;
+}
+
+@mixin transition($trans-elem, $trans-dur, $trans-ease) {
+	-webkit-transition: $trans-elem $trans-dur $trans-ease;
+	-moz-transition: $trans-elem $trans-dur $trans-ease;
+	-ms-transition: $trans-elem $trans-dur $trans-ease;
+	-o-transition: $trans-elem $trans-dur $trans-ease;
+	transition: $trans-elem $trans-dur $trans-ease;
+}

@@ -13,9 +13,10 @@
 
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/css/main.css">
+        <link rel="stylesheet" href="components/reset-css/reset.css">
         <!-- endbuild -->
 </head>
-  <body ng-app="angexpApp">
+  <body class="container" ng-app="angexpApp">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -26,8 +27,24 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="nav-block">
+      <div class="nav-block-inner">
+        <div class="nav-block-content">
+          Sample Header
+        </div>
+      </div>
+    </div>
 
+    <div class="body-block">
+      <div class="body-block-content" ng-view="">
+        
+      </div>
+      <div class="aside-block">
+        <div class="aside-block-content">
+          This is aside block!!
+        </div>
+      </div>
+    </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
