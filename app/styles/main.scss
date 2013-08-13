@@ -1,11 +1,21 @@
 @import "mixins.scss";
 @import "mediaqueries.scss";
+@font-face {
+  font-family: 'Icons';
+  src: url('../../fonts/icomoon.ttf') format('truetype'),
+       url('../../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .container{
   background-color: #eaeaea;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   font-size: 1em;
+  .icon{
+    font-family: "Icons";
+  }
 }
 
 .nav-block{
@@ -22,14 +32,16 @@
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  @include transition(all, .3s, linear);
+  @include transition(all, .2s, linear);
   font-size: 2.5em;
   color: #888;
   line-height: 1.4em;
   .nav-block-inner{
-    padding: 18px;
     .nav-block-content{
-
+      font-family: 'Cabin Condensed';
+      .main-nav-list{
+        font-size: 28px;
+      }
     }
   }
 }
@@ -45,12 +57,13 @@
   position: relative;
   display: inline-block;
   padding: 40px;
-  max-width: 700px;
+  max-width: 660px;
   min-height: 1700px;
   background-color: #fff;
   @include box-sizing(border-box);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  
 }
 
 .aside-block{
@@ -62,5 +75,6 @@
   min-height: 600px;
   padding-left: 24px;
   @include box-sizing(border-box);
+  background-color: #ccc;
 }
 

@@ -1,4 +1,6 @@
-@media all and (max-width: 1600px) and (min-width: 1400px){
+@import "mixins.scss";
+
+@media all and (max-width: 1600px) and (min-width: 1367px){
   body{
     .nav-block, .body-block{
       margin-left: 5%;
@@ -6,81 +8,99 @@
   }
 }
 
-@media all and (max-width: 1441px){
+
+@media all and (max-width: 1366px) and (min-width: 1280px){
   body{
-    .nav-block{
-      margin-left: 24px;
+    .nav-block, .body-block{
+      margin-left: 3%;
     }
-    .body-block{
-      margin-left: 24px;
+    .body-block-content{
+      width: 600px;
     }
   }
 }
 
-@media all and (max-width: 1380px) and (min-width: 767px){
+@media all and (max-width: 1279px) {
   body{
-    .nav-block{
-      margin-left: 6%;
+  .nav-block, .body-block{
+      margin-left: 7%;
     }
-    .body-block{
-      margin-left: 6%;
+    .aside-block{
+      position: relative;
     }
-  }
+  } 
 }
 
 @media all and (max-width: 1080px){
   body{
     .nav-block{
-      margin-left: 24px;
+      margin-left: 5%;
       width: 240px;
     }
     .body-block{
-      margin-left: 24px;
+      margin-left: 5%;
       padding-left: 270px;
     }
   }
 }
 
-@media all and (max-width: 900px){
+@media all and (max-width: 920px){
   body{
     .nav-block{
       margin: 0px;
       width: 200px;
     }
     .body-block{
-      margin: 0px 20px;
-      padding-left: 200px;
+      margin: 0px;
+      padding-left: 220px;
     }
   }
 }
 
-@media all and (max-width: 767px) and (min-width: 640px){
+@media all and (max-width: 830px){
   body{
     .nav-block{
-      display: none;
-    }
-    .body-block{
-      padding: 0;
-    }
-  }
-}
-
-@media all and (max-width: 1380px){
-  body{
-    .aside-block{
       position: relative;
-      padding: 0;
+      margin-left: 7%;
+      width: 600px;
+    }
+    .body-block{
+      padding-left: 7%;
+    }
+    .body-block-content{
+      width: 600px;
+      @include transition(all, .2s, linear);
     }
   }
 }
 
-@media all and (max-width: 640px){
+@media all and (max-width: 675px){
   body{
     .nav-block{
-      display: none;
+      margin-left: 1%;
+      width: 540px;
+    }
+    .body-block{
+      padding-left: 1%;
+    }
+    .body-block-content{
+      width: 540px;
+    }
+  }  
+}
+
+@media all and (max-width: 580px){
+  body{
+    .nav-block{
+      margin: 0;
+      width: 480px;
     }
     .body-block{
       padding: 0;
+      margin: 0;
+    }
+    .body-block-content{
+      width: 480px;
     }
   }
 }

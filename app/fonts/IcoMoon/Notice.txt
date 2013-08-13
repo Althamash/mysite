@@ -1,0 +1,5 @@
+Font conversion was canceled. You either selected too many icons (more than 1500), or IcoMoon's servers could not be accessed.
+
+You can convert the generated SVG font to other formats yourself:
+http://www.freefontconverter.com
+http://www.fontsquirrel.com/fontface/generator

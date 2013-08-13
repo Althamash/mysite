@@ -1,77 +1,102 @@
-@media all and (max-width: 1600px) and (min-width: 1400px) {
-  /* line 3, ../mediaqueries.scss */
+@media all and (max-width: 1600px) and (min-width: 1367px) {
+  /* line 5, ../mediaqueries.scss */
   body .nav-block, body .body-block {
     margin-left: 5%;
   }
 }
-@media all and (max-width: 1441px) {
-  /* line 11, ../mediaqueries.scss */
-  body .nav-block {
-    margin-left: 24px;
-  }
+@media all and (max-width: 1366px) and (min-width: 1280px) {
   /* line 14, ../mediaqueries.scss */
-  body .body-block {
-    margin-left: 24px;
+  body .nav-block, body .body-block {
+    margin-left: 3%;
+  }
+  /* line 17, ../mediaqueries.scss */
+  body .body-block-content {
+    width: 600px;
   }
 }
-@media all and (max-width: 1380px) and (min-width: 767px) {
-  /* line 22, ../mediaqueries.scss */
-  body .nav-block {
-    margin-left: 6%;
-  }
+@media all and (max-width: 1279px) {
   /* line 25, ../mediaqueries.scss */
-  body .body-block {
-    margin-left: 6%;
+  body .nav-block, body .body-block {
+    margin-left: 7%;
+  }
+  /* line 28, ../mediaqueries.scss */
+  body .aside-block {
+    position: relative;
   }
 }
 @media all and (max-width: 1080px) {
-  /* line 33, ../mediaqueries.scss */
+  /* line 36, ../mediaqueries.scss */
   body .nav-block {
-    margin-left: 24px;
+    margin-left: 5%;
     width: 240px;
   }
-  /* line 37, ../mediaqueries.scss */
+  /* line 40, ../mediaqueries.scss */
   body .body-block {
-    margin-left: 24px;
+    margin-left: 5%;
     padding-left: 270px;
   }
 }
-@media all and (max-width: 900px) {
-  /* line 46, ../mediaqueries.scss */
+@media all and (max-width: 920px) {
+  /* line 49, ../mediaqueries.scss */
   body .nav-block {
     margin: 0px;
     width: 200px;
   }
-  /* line 50, ../mediaqueries.scss */
+  /* line 53, ../mediaqueries.scss */
   body .body-block {
-    margin: 0px 20px;
-    padding-left: 200px;
+    margin: 0px;
+    padding-left: 220px;
   }
 }
-@media all and (max-width: 767px) and (min-width: 640px) {
-  /* line 59, ../mediaqueries.scss */
-  body .nav-block {
-    display: none;
-  }
+@media all and (max-width: 830px) {
   /* line 62, ../mediaqueries.scss */
-  body .body-block {
-    padding: 0;
-  }
-}
-@media all and (max-width: 1380px) {
-  /* line 70, ../mediaqueries.scss */
-  body .aside-block {
+  body .nav-block {
     position: relative;
-    padding: 0;
+    margin-left: 7%;
+    width: 600px;
+  }
+  /* line 67, ../mediaqueries.scss */
+  body .body-block {
+    padding-left: 7%;
+  }
+  /* line 70, ../mediaqueries.scss */
+  body .body-block-content {
+    width: 600px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
 }
-@media all and (max-width: 640px) {
+@media all and (max-width: 675px) {
   /* line 79, ../mediaqueries.scss */
   body .nav-block {
-    display: none;
+    margin-left: 1%;
+    width: 540px;
   }
-  /* line 82, ../mediaqueries.scss */
+  /* line 83, ../mediaqueries.scss */
+  body .body-block {
+    padding-left: 1%;
+  }
+  /* line 86, ../mediaqueries.scss */
+  body .body-block-content {
+    width: 540px;
+  }
+}
+@media all and (max-width: 580px) {
+  /* line 94, ../mediaqueries.scss */
+  body .nav-block {
+    margin: 0;
+    width: 480px;
+  }
+  /* line 98, ../mediaqueries.scss */
   body .body-block {
     padding: 0;
+    margin: 0;
+  }
+  /* line 102, ../mediaqueries.scss */
+  body .body-block-content {
+    width: 480px;
   }
 }
