@@ -1,5 +1,7 @@
 @import "mixins.scss";
 @import "mediaqueries.scss";
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
 @font-face {
   font-family: 'Icons';
   src: url('../../fonts/icomoon.ttf') format('truetype'),
@@ -27,11 +29,11 @@
   margin-left: 11%;
   width: 300px;
   background: white;
-  
   @include box-sizing(border-box);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   @include transition(all, .2s, linear);
   font-size: 2.5em;
   color: #888;
@@ -39,8 +41,115 @@
   .nav-block-inner{
     .nav-block-content{
       font-family: 'Cabin Condensed';
+      .main-profile-img{
+        width: 100%;
+        margin: 0px 0px;
+        border-radius: 4px 4px 0 0;
+      }
+      .main-my-name{
+        padding: 30px;
+      }
       .main-nav-list{
-        font-size: 28px;
+        .list-item{
+          cursor: pointer;
+          div{
+            font-size: 0.80em;
+            line-height: 1.6em;
+            height: 54px;
+          }
+          &.home{
+            .main-icons{
+              background-color: #b3c833;
+            }
+            &:hover, &.active{
+              div{
+                background-color: #b3c833;
+                .main-nav-text{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &.about{
+            .main-icons{
+              background-color: #ce5043;
+            }
+            &:hover, &.active{
+              div{
+                background-color: #ce5043;
+                .main-nav-text{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &.work{
+            .main-icons{
+              background-color: #fb8521;
+            }
+            &:hover, &.active{
+              div{
+                background-color: #fb8521;
+                .main-nav-text{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &.labs{
+            .main-icons{
+              background-color: #1aa1e1;
+            }
+            &:hover, &.active{
+              div{
+                background-color: #1aa1e1;
+                .main-nav-text{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &.contact{
+            .main-icons{
+              background-color: #5e5ca6;
+            }
+            &:hover, &.active{
+              div{
+                background-color: #5e5ca6;
+                .main-nav-text{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          &.blog{
+            .main-icons{
+              background-color: #658092;
+            }
+            &:hover, &.active{
+              div{
+                background-color: #658092;
+                .main-nav-text{
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .main-icons{
+            display: inline-block;
+            height: 54px;
+            width: 18%;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9em;
+          }
+          .main-nav-text{
+            padding: 0 0 0 20px;
+            font-family: 'Roboto';
+            font-size: 0.75em;
+            color: #555;
+          }
+        }
       }
     }
   }
@@ -63,7 +172,6 @@
   @include box-sizing(border-box);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  
 }
 
 .aside-block{
@@ -78,3 +186,40 @@
   background-color: #ccc;
 }
 
+.imprima{
+  font-family: 'Imprima';
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #444;
+}
+.oxygen{
+  font-family: 'Oxygen';
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #444;
+}
+.raleway{
+  font-family: 'Raleway';
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #444;
+}
+
+.imprima b, .oxygen b, .raleway b{
+  font-family: 'Oxygen';
+  font-weight: bold;
+  color: #000;
+}
+
+.heading1{
+  font-family: 'Cantora One';
+  font-size: 2em;
+}
+.heading2{
+  font-family: 'Roboto Condensed';
+  font-size: 2em;
+}
+.heading3{
+  font-family: 'Magra';
+  font-size: 2em;
+}

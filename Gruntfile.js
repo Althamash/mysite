@@ -246,6 +246,10 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
+  grunt.registerTask('lint', [
+    'jshint'
+  ]);
+
   grunt.registerTask('build', [
     'clean:dist',
     'jshint',
