@@ -33,10 +33,6 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass']
-      },
       express: {
         files: [
           '<%= yeoman.app %>/{,*//*}*.html',
@@ -86,23 +82,6 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'karma.conf.js',
         singleRun: true
-      }
-    },
-    compass: {
-      options: {
-        sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '<%= yeoman.app %>/styles/css',
-        imagesDir: '<%= yeoman.app %>/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
-        importPath: '<%= yeoman.app %>/components',
-        relativeAssets: true
-      },
-      dist: {},
-      server: {
-        options: {
-          debugInfo: true
-        }
       }
     },
     concat: {
@@ -234,7 +213,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('server', [
     'clean:server',
-    'compass:server',
     'express:dev',
     'open',
     'watch'
@@ -242,7 +220,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
-    'compass',
     'karma'
   ]);
 
@@ -254,7 +231,6 @@ module.exports = function (grunt) {
     'clean:dist',
     'jshint',
     'test',
-    'compass:dist',
     'useminPrepare',
     'imagemin',
     'cssmin',

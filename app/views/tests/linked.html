@@ -1,0 +1,22 @@
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  api_key: gmzda3jw1m9q
+
+</script>
+
+
+<p>This example shows how to get data for members using the MemberData function.</p>
+<script type="IN/MemberData" data-ids="170611815, 0Ty1ka--3Y, vg90Sp6cDe">
+<ul>
+  <?js for (var key in $("*")) { ?>
+  <li>
+    <a href="<?js= $(key).publicProfileUrl ?>">
+      <?js if ($(key).pictureUrl) { ?>
+        <img src="<?js= $(key).pictureUrl ?>"></img>
+      <?js } ?>
+      <?js= $(key).firstName ?>
+      <?js= $(key).lastName ?>
+    </a>
+  </li>
+  <?js } ?>
+</ul>
+</script>

@@ -1,0 +1,51 @@
+/* -----------------------------------------------
+Version: 0.1 [26 Mar 2012]
+
+SMACSS [Scalable Modular Architecture for CSS]
+Reference: http://smacss.com/
+
+CATEGORIES:
+1. Master  - Default elements style redefinitions
+2. Layout  - Stacking/Placement of elements
+3. Modules - Reusable elements style definitions
+4. States  - Interaction styling
+----------------------------------------------- */
+
+/*-------------------------------------------------
+MASTER: IMPORTING STYLESHEETS
+-------------------------------------------------*/
+@import url("../../components/reset-css/reset.css");
+@import url("mediaqueries.css");
+@import url("layout.css");
+@import url("testing.css");
+/*
+@import url("module.css");
+@import url("state.css");
+
+
+@import url("fonts.css");
+
+@import url("responsive.css");
+@import url("browser-fixes.css");
+
+*/
+
+/*-------------------------------------------------
+MASTER: WEBSITE CUSTOM STYLES
+-------------------------------------------------*/
+
+body {
+  background-color: #eaeaea;
+  font-family: 'Imprima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.icon {
+  font-family: "Icons";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cantora One';
+}

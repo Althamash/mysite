@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'Icons';
+  src: url("../../fonts/icomoon.ttf") format("truetype"), url("../../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-------------------------------------------------
+LAYOUT: MAIN NAVIGATION
+-------------------------------------------------*/
+
+.nav-block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 24px;
+  margin-left: 11%;
+  width: 300px;
+  color: #888;
+  line-height: 3.4em;
+  background: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 99;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.nav-block .nav-block-content .main-profile-img {
+  width: 100%;
+  margin: 0px 0px;
+  border-radius: 4px 4px 0 0;
+}
+
+.nav-block .nav-block-content .main-my-name {
+  font-family: 'Cabin Condensed';
+  padding: 30px;
+  font-size: 2.6em;
+}
+
+.nav-block .nav-block-content .main-nav-list .list-item {
+  cursor: pointer;
+  max-height: 54px;
+}
+
+.nav-block .nav-block-content .main-nav-list .list-item div {
+  font-size: 1.8em;
+  height: 54px;
+}
+
+.nav-block .main-nav-list .list-item.home .main-icons {
+  background-color: #b3c833;
+}
+
+.nav-block .main-nav-list .list-item.home:hover div, .nav-block .main-nav-list .list-item.home.active div {
+  background-color: #b3c833;
+}
+
+.nav-block .main-nav-list .list-item.home:hover div .main-nav-text, .nav-block .main-nav-list .list-item.home.active div .main-nav-text {
+  color: #fff;
+}
+
+.nav-block .main-nav-list .list-item.about .main-icons {
+  background-color: #ce5043;
+}
+
+.nav-block .main-nav-list .list-item.about:hover div, .nav-block .main-nav-list .list-item.about.active div {
+  background-color: #ce5043;
+}
+
+.nav-block .main-nav-list .list-item.about:hover div .main-nav-text, .nav-block .main-nav-list .list-item.about.active div .main-nav-text {
+  color: #fff;
+}
+
+.nav-block .main-nav-list .list-item.work .main-icons {
+  background-color: #fb8521;
+}
+
+.nav-block .main-nav-list .list-item.work:hover div, .nav-block .main-nav-list .list-item.work.active div {
+  background-color: #fb8521;
+}
+
+.nav-block .main-nav-list .list-item.work:hover div .main-nav-text, .nav-block .main-nav-list .list-item.work.active div .main-nav-text {
+  color: #fff;
+}
+
+.nav-block .main-nav-list .list-item.labs .main-icons {
+  background-color: #1aa1e1;
+}
+
+.nav-block .main-nav-list .list-item.labs:hover div, .nav-block .main-nav-list .list-item.labs.active div {
+  background-color: #1aa1e1;
+}
+
+.nav-block .main-nav-list .list-item.labs:hover div .main-nav-text, .nav-block .main-nav-list .list-item.labs.active div .main-nav-text {
+  color: #fff;
+}
+
+.nav-block .main-nav-list .list-item.connect .main-icons {
+  background-color: #5e5ca6;
+}
+
+.nav-block .main-nav-list .list-item.connect:hover div, .nav-block .main-nav-list .list-item.connect.active div {
+  background-color: #5e5ca6;
+}
+
+.nav-block .main-nav-list .list-item.connect:hover div .main-nav-text, .nav-block .main-nav-list .list-item.connect.active div .main-nav-text {
+  color: #fff;
+}
+
+.nav-block .main-nav-list .list-item.blog .main-icons {
+  background-color: #658092;
+}
+
+.nav-block .main-nav-list .list-item.blog:hover div, .nav-block .main-nav-list .list-item.blog.active div {
+  background-color: #658092;
+}
+
+.nav-block .main-nav-list .list-item.blog:hover div .main-nav-text, .nav-block .main-nav-list .list-item.blog.active div .main-nav-text {
+  color: #fff;
+}
+
+.nav-block .main-nav-list .list-item .main-icons {
+  display: inline-block;
+  height: 54px;
+  width: 18%;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.nav-block .main-nav-list .list-item .main-nav-text {
+  padding: 0 0 0 20px;
+  font-family: 'Roboto';
+  font-size: 0.75em;
+  color: #555;
+}
+
+.body-block {
+  margin: 24px;
+  margin-left: 11%;
+  padding-left: 330px;
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.body-block-content {
+  display: inline-block;
+  padding: 20px;
+  max-width: 700px;
+  width: 700px;
+  min-width: 440px;
+  min-height: 1700px;
+  background-color: #fff;
+/*  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;*/
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.aside-block {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 240px;
+  max-width: 240px;
+  min-height: 600px;
+  padding: 10px;
+  margin-left: 10px;
+/*  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;*/
+  background-color: #ccc;
+}
+
+.location{
+  font-size: 72px;
+}
+
+.map {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.map img{
+  width: 5em;
+  height: 3.5em;
+}
+
+.map-pointer {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  margin: 0 auto;
+  background-color: #444;
+  border: 8px solid #f75850;
+  border-radius: 50px;
+  -webkit-animation: hover 1.3s infinite linear;
+  -moz-animation: hover 1.3s infinite linear;
+  -ms-animation: hover 1.3s infinite linear;
+  -o-animation: hover 1.3s infinite linear;
+}
+
+.map-pointer::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 11px;
+  left: -6px;
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #f75850;
+}
+.map-desc{
+  float: left;
+  font-size: 0.2em;
+}
+.map-desc h1{
+  margin-top: 2.8em;
+  font-size: 2em;
+}
+.map-desc span{
+  display: block;
+  font-size: 1.3em;
+  text-indent: 1em;
+  margin-top: 1em;
+}
+@-webkit-keyframes hover {
+  0% {
+    top: 30%;
+  }
+  40% {
+    top: 22%;
+  }
+  100% {
+    top: 30%;
+  }
+}

@@ -10,15 +10,7 @@
   font-style: normal;
 }
 
-.container{
-  background-color: #eaeaea;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-  font-size: 1em;
-  .icon{
-    font-family: "Icons";
-  }
-}
+
 
 .nav-block{
   position: fixed;
@@ -35,7 +27,6 @@
   overflow-x: hidden;
   overflow-y: scroll;
   @include transition(all, .2s, linear);
-  font-size: 2.5em;
   color: #888;
   line-height: 1.4em;
   .nav-block-inner{
@@ -47,6 +38,7 @@
         border-radius: 4px 4px 0 0;
       }
       .main-my-name{
+        font-family: 'Cabin Condensed';
         padding: 30px;
       }
       .main-nav-list{
@@ -166,7 +158,9 @@
   position: relative;
   display: inline-block;
   padding: 40px;
-  max-width: 660px;
+  max-width: 720px;
+  width: 720px;
+  min-width: 480px;
   min-height: 1700px;
   background-color: #fff;
   @include box-sizing(border-box);
@@ -190,19 +184,19 @@
   font-family: 'Imprima';
   line-height: 1.8em;
   font-size: 1.2em;
-  color: #444;
+  color: #343434;
 }
 .oxygen{
   font-family: 'Oxygen';
   line-height: 1.8em;
   font-size: 1.2em;
-  color: #444;
+  color: #343434;
 }
 .raleway{
   font-family: 'Raleway';
   line-height: 1.8em;
   font-size: 1.2em;
-  color: #444;
+  color: #343434;
 }
 
 .imprima b, .oxygen b, .raleway b{
@@ -222,4 +216,46 @@
 .heading3{
   font-family: 'Magra';
   font-size: 2em;
+}
+
+.map{
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.map-pointer{
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  margin: 0 auto;
+  background-color: #444;
+  border: 8px solid #f75850;
+  border-radius: 50px;
+  @include animate(hover 1.3s infinite linear);
+}
+.map-pointer::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 11px;
+  left: -6px;
+  display: inline-block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #f75850;
+}
+@-webkit-keyframes hover {
+  0%{
+    top: 18%; 
+  }
+  40%{
+    top: 8%; 
+  }
+  100%{
+    top: 18%; 
+  }
 }

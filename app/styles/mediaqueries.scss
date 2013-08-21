@@ -5,6 +5,9 @@
     .nav-block, .body-block{
       margin-left: 5%;
     }
+    .body-block-content{
+      width: 640px;
+    }
   }
 }
 
@@ -12,10 +15,10 @@
 @media all and (max-width: 1366px) and (min-width: 1280px){
   body{
     .nav-block, .body-block{
-      margin-left: 3%;
+      margin-left: 2%;
     }
     .body-block-content{
-      width: 600px;
+      width: 580px;
     }
   }
 }
@@ -23,7 +26,10 @@
 @media all and (max-width: 1279px) {
   body{
   .nav-block, .body-block{
-      margin-left: 7%;
+      margin-left: 6%;
+    }
+    .body-block-content{
+      width: 600px;
     }
     .aside-block{
       position: relative;
@@ -44,7 +50,7 @@
   }
 }
 
-@media all and (max-width: 920px){
+@media all and (max-width: 939px){
   body{
     .nav-block{
       margin: 0px;
@@ -61,11 +67,11 @@
   body{
     .nav-block{
       position: relative;
-      margin-left: 7%;
+      margin-left: 8%;
       width: 600px;
     }
     .body-block{
-      padding-left: 7%;
+      padding-left: 8%;
     }
     .body-block-content{
       width: 600px;

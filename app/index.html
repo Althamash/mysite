@@ -12,9 +12,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css({.tmp,app}) styles/main.css -->
-        <link rel="stylesheet" href="styles/css/main.css">
-        <link rel="stylesheet" href="components/reset-css/reset.css">
-        <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed|Kite+One|Oxygen:400,700|Raleway|Imprima|Magra|Cantora One|Roboto Condensed' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/css/master.css">
+        <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed|Kite+One|Oxygen:400,700|Raleway|Imprima|Magra|Cantora One|Roboto+Condensed:700|Roboto:300' rel='stylesheet' type='text/css'>
         <!-- endbuild -->
 </head>
   <body class="container" ng-app="angexpApp">
@@ -28,28 +27,28 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="nav-block">
+    <div class="nav-block" ng-controller="navCtrl" ng-init="Init()">
       <div class="nav-block-inner">
         <div class="nav-block-content">
           <!-- <img src="images/sample.jpg" class="main-profile-img"> -->
           <h1 class="main-my-name">Muhammed Althamash</h1>
           <ul class="main-nav-list">
-            <li class="list-item home active">
+            <li class="list-item home" nav-action="home" ng-class="{active: path=='home'}">
               <div><span class="icon main-icons">&#xe0e9;</span><span class="main-nav-text">Home</span></div>
             </li>
-            <li class="list-item about">
+            <li class="list-item about" nav-action="about" ng-class="{active: path=='about'}">
               <div><span class="icon main-icons">&#xe0f8;</span><span class="main-nav-text">About</span></div>
             </li>
-            <li class="list-item work">
+            <li class="list-item work" nav-action="work" ng-class="{active: path=='work'}">
               <div><span class="icon main-icons">&#xe0a6;</span><span class="main-nav-text">Work</span></div>
             </li>
-            <li class="list-item labs">
-              <div><span class="icon main-icons">&#xe0a2;</span><span class="main-nav-text">Labs</span></div>
+            <li class="list-item labs" nav-action="labs" ng-class="{active: path=='labs'}">
+              <div><span class="icon main-icons">&#xe08c;</span><span class="main-nav-text">Labs</span></div>
             </li>
-            <li class="list-item contact">
-              <div><span class="icon main-icons">&#xe06d;</span><span class="main-nav-text">Contact</span></div>
+            <li class="list-item connect" nav-action="connect" ng-class="{active: path=='connect'}">
+              <div><span class="icon main-icons">&#xe06d;</span><span class="main-nav-text">Connect</span></div>
             </li>
-            <li class="list-item blog">
+            <li class="list-item blog" nav-action="blog" ng-class="{active: path=='blog'}">
               <div><span class="icon main-icons">&#xe004;</span><span class="main-nav-text">Blog</span></div>
             </li>
           </ul>
@@ -61,9 +60,8 @@
       <div class="body-block-content" ng-view="">
         
       </div>
-      <div class="aside-block">
+      <div class="aside-block" ng-controller="asideCtrl">
         <div class="aside-block-content">
-          This is aside block!!
         </div>
       </div>
     </div>
@@ -78,7 +76,8 @@
     <script src="components/angular/angular.js"></script>
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>
+    <script src="scripts/directives/directives.js"></script>
     <!-- endbuild -->
 
         <!-- build:js scripts/modules.js -->

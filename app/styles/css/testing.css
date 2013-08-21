@@ -1,0 +1,41 @@
+.imprima {
+  font-family: 'Imprima';
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #343434;
+}
+
+.oxygen {
+  font-family: 'Oxygen';
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #343434;
+}
+
+.raleway {
+  font-family: 'Raleway';
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #343434;
+}
+
+.imprima b, .oxygen b, .raleway b {
+  font-family: 'Oxygen';
+  font-weight: bold;
+  color: #000;
+}
+
+.heading1 {
+  font-family: 'Cantora One';
+  font-size: 2em;
+}
+
+.heading2 {
+  font-family: 'Roboto Condensed';
+  font-size: 2em;
+}
+
+.heading3 {
+  font-family: 'Magra';
+  font-size: 2em;
+}

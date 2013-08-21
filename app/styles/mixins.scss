@@ -21,3 +21,10 @@
 	-o-transition: $trans-elem $trans-dur $trans-ease;
 	transition: $trans-elem $trans-dur $trans-ease;
 }
+
+@mixin animate($value){
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  -ms-animation: $value;
+  -o-animation: $value;
+}
