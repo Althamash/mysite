@@ -17,7 +17,7 @@ angular.module('angexpApp', [])
       })
       .when('/work', {
         templateUrl: 'views/work.html',
-        controller: 'homeCtrl'
+        controller: 'workCtrl'
       })
       .when('/labs', {
         templateUrl: 'views/labs.html',

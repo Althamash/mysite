@@ -19,7 +19,7 @@ module.exports = function (grunt) {
     yeoman: yeomanConfig,
     express: {
       options: {
-        port: process.env.PORT || 9000
+        port: process.env.PORT || 3000
       },
       dev: {
         options: {
