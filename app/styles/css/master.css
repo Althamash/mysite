@@ -49,3 +49,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cantora One';
 }
+
+b{
+	font-family: 'Oxygen';
+	font-weight: bold;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hide{
+	display: none;
+}

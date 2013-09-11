@@ -13,7 +13,7 @@ angular.module('angexpApp', [])
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'homeCtrl'
+        controller: 'aboutCtrl'
       })
       .when('/work', {
         templateUrl: 'views/work.html',

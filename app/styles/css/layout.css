@@ -213,33 +213,16 @@ LAYOUT: CONNECT PAGE
 }
 
 .map-pointer {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
+  width: 46px;
+  height: 60px;
   position: absolute;
   top: 18%;
-  left: 45%;
-  margin: 0 auto;
-  background-color: #444;
-  border: 8px solid #f75850;
-  border-radius: 50px;
-  -webkit-animation: hover 1.3s infinite linear;
-  -moz-animation: hover 1.3s infinite linear;
-  -ms-animation: hover 1.3s infinite linear;
-  -o-animation: hover 1.3s infinite linear;
-}
-
-.map-pointer::after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 11px;
-  left: -6px;
-  display: inline-block;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 20px solid #f75850;
+  left: 42%;
+  background-image: url('../../images/map-pointer.png');
+  -webkit-animation: hover 1.5s infinite ease-in-out;
+  -moz-animation: hover 1.5s infinite ease-in-out;
+  -ms-animation: hover 1.5s infinite ease-in-out;
+  -o-animation: hover 1.5s infinite ease-in-out;
 }
 .map-desc{
   float: left;
@@ -258,13 +241,13 @@ LAYOUT: CONNECT PAGE
 }
 @-webkit-keyframes hover {
   0% {
-    top: 30%;
+    top: 27%;
   }
-  40% {
-    top: 22%;
+  50% {
+    top: 18%;
   }
   100% {
-    top: 30%;
+    top: 27%;
   }
 }
 
@@ -281,22 +264,34 @@ LAYOUT: WORK PAGE
   text-indent: 3em;
   line-height: 2em;
 }
-.language-graph{
-  position: relative;
-  min-height: 500px;
+.graph-container{
   background-color:#f4f4f4;
   background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 2px),
   linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px);
   background-size:20px 20px, 20px 20px;
   background-position:-2px -2px, -2px -2px;
   background-repeat: repeat;
+  box-shadow: inset 0 0 20px -6px rgba(0, 0, 0, 0.3);
+  padding: 30px 0;
+}
+.language-graph{
+  position: relative;
+  min-height: 500px;
+
+  /*background-color:#f4f4f4;
+  background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 2px),
+  linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px);
+  background-size:20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px;
+  background-repeat: repeat;
+  box-shadow: inset 0 0 20px -6px rgba(0, 0, 0, 0.3);*/
 }
 .language-graph .graph-heading{
   position: relative;
   width: 200px;
   height: 40px;
   background-color: #7a9b29;
-  top: 18px;
+  top: 12px;
   left: 0px;
   color: #FFF;
   font-size: 1.4em;
@@ -338,7 +333,7 @@ LAYOUT: WORK PAGE
 .language-graph .bottom-bar{
   position: absolute;
   bottom: 10px;
-  left: 80px;
+  left: 76px;
   width: 80%;
   height: 40px;
   /*background-color: #87ab30;*/
@@ -361,11 +356,9 @@ LAYOUT: WORK PAGE
 }
 .language-graph .bar{
   position: absolute;
-  bottom: 50px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
+  bottom: 56px;
+  width: 50px;
+  height: 5px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -375,43 +368,44 @@ LAYOUT: WORK PAGE
 }
 .language-graph .bar.html{
   left: 21%;
-  border-bottom: 10px solid #bf701d;
+  background-color: #bf701d;
 }
 .language-graph .bar.css{
   left: 47%;
-  border-bottom: 10px solid #348ca9;
+  background-color: #348ca9;
 }
 .language-graph .bar.js{
   left: 71%;
-  border-bottom: 10px solid #c5a721;
+  background-color: #c5a721;
 }
 .language-graph .bar.html.full{
-  border-bottom-width: 260px;
+  height: 260px;
 }
 .language-graph .bar.css.full{
-  border-bottom-width: 300px;
+  height: 300px;
 }
 .language-graph .bar.js.full{
-  border-bottom-width: 280px;
+  height: 280px;
 }
 
 .other-graph{
   position: relative;
   min-height: 600px;
-  background-color:#f4f4f4;
+  /*background-color:#f4f4f4;
   background-image: linear-gradient(rgba(255,255,255,.2) 2px, transparent 2px),
   linear-gradient(90deg, rgba(255,255,255,.2) 2px, transparent 2px);
   background-size:20px 20px, 20px 20px;
   background-position:-2px -2px, -2px -2px;
-  background-repeat: repeat;
-  margin-top: 40px;
+  background-repeat: repeat;*/
+  /*margin-top: 40px;*/
+  /*box-shadow: inset 0 0 20px -6px rgba(0, 0, 0, 0.3);*/
 }
 .other-graph .graph-heading{
   position: relative;
   width: 200px;
   height: 40px;
   background-color: #7a9b29;
-  top: 18px;
+  top: 12px;
   left: 0px;
   color: #FFF;
   font-size: 1.4em;
@@ -439,7 +433,7 @@ LAYOUT: WORK PAGE
 }
 .other-graph .left-bar{
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 10px;
   width: 100px;
   height: 79%;
@@ -457,7 +451,7 @@ LAYOUT: WORK PAGE
 }
 .other-graph .top-bar{
   position: absolute;
-  top: 70px;
+  top: 90px;
   left: 120px;
   width: 76%;
   height: 40px;
@@ -477,9 +471,14 @@ LAYOUT: WORK PAGE
 .other-graph .bar{
   position: absolute;
   left: 116px;
-  width: 385px;
+  width: 10px;
   height: 20px;
   border-radius: 0 4px 4px 0;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 .other-graph .bar:before{
   content: '';
@@ -496,34 +495,71 @@ Jquery = #05568D;
 Angular = #A6100D;
 Grunt = #E48632;
 */
-.other-graph .bar.one{
-  top: 155px;
-  background-color: #573D7D;
-}
-.other-graph .bar.one.full{
-  width: 60%;
-}
-.other-graph .bar.two{
-  top: 205px;
-  background-color: #05568D;
-}
-.other-graph .bar.two.full{
-  width: 60%;
-}
-.other-graph .bar.three{
-  top: 255px;
+.other-graph .bar.angular{
+  
   background-color: #A6100D;
 }
-.other-graph .bar.three.full{
-  width: 60%;
+.other-graph .bar.bootstrap{
+  
+  background-color: #573D7D;
 }
-.other-graph .bar.four{
-  top: 305px;
+.other-graph .bar.grunt{
+
   background-color: #E48632;
 }
-.other-graph .bar.four.full{
-  width: 60%;
+.other-graph .bar.jquery{
+  
+  background-color: #05568D;
 }
+
+
+.other-graph .bar.one{
+  top: 175px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.other-graph .bar.bootstrap.full{
+  width: 45%;
+}
+.other-graph .bar.jquery.full{
+  width: 50%;
+}
+.other-graph .bar.angular.full{
+  width: 23%;
+}
+.other-graph .bar.grunt.full{
+  width: 18%;
+}
+.other-graph .bar.two{
+  top: 225px;
+  -webkit-transition-delay: .05s;
+  -moz-transition-delay: .05s;
+  -ms-transition-delay: .05s;
+  -o-transition-delay: .05s;
+  transition-delay: .05s;
+}
+
+.other-graph .bar.three{
+  top: 275px;
+  -webkit-transition-delay: .1s;
+  -moz-transition-delay: .1s;
+  -ms-transition-delay: .1s;
+  -o-transition-delay: .1s;
+  transition-delay: .1s;
+}
+
+.other-graph .bar.four{
+  top: 325px;
+  -webkit-transition-delay: .15s;
+  -moz-transition-delay: .15s;
+  -ms-transition-delay: .15s;
+  -o-transition-delay: .15s;
+  transition-delay: .15s;
+}
+
 
 .divider{
   width: 70%;
@@ -556,5 +592,87 @@ Grunt = #E48632;
 }
 
 .resume{
-  margin-top: 20px;
+  margin: 40px 0 0 40px;
 }
+.resume-icon{
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  width: 44px;
+  height: 64px;
+  padding: 8px 0 0 6px;
+  font-size: 58px;
+  line-height: 12px;
+  background-color: #D22027;
+}
+.resume-icon:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: #951313; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTUxMzEzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjOTUxMzEzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(45deg,  #951313 0%, #951313 50%, #ffffff 50%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#951313), color-stop(50%,#951313), color-stop(50%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #951313 0%,#951313 50%,#ffffff 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #951313 0%,#951313 50%,#ffffff 50%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #951313 0%,#951313 50%,#ffffff 50%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #951313 0%,#951313 50%,#ffffff 50%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#951313', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+
+.resume-icon:after{
+  content: 'PDF';
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  width: 28px;
+  height: 18px;
+  padding-left: 4px;
+  background-color: #951313;
+}
+
+.my-resume{
+  display: inline-block;
+  font-family: 'Magra';
+  font-size: 32px;
+  /*line-height: 2px;*/
+  text-indent: 14px;
+  color: #777;
+  padding-top: 12px;
+}
+
+.vd{
+  display: inline-block;
+  width: 50%;
+  /*text-align: right;*/
+  font-family: 'Magra';
+  font-size: 24px;
+  /*line-height: 2px;*/
+  text-indent: 14px;
+  color: #777;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.view:hover{
+  color: #1aa1e1;
+}
+
+.download:hover{
+  color: #5fb83c;
+}
+
+
+/*-------------------------------------------------
+LAYOUT: ABOUT PAGE
+-------------------------------------------------*/
+
+

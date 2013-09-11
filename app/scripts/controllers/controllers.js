@@ -6,10 +6,21 @@ app.controller('homeCtrl', function ($scope) {
   
 });
 
+app.controller('aboutCtrl', function ($scope, $http) {
+  $scope.getTimelineData = function(){
+    $http.get('scripts/timeline.json').success(function(data){
+      $scope.timelineData = data.data;
+      // console.log($scope.timelineData);
+    });
+    
+  }
+});
+
 app.controller('workCtrl', function ($scope) {
-	$scope.loaded = false;
+	$scope.langGraphLoaded = false;
+  $scope.otherGraphLoaded = false;
   $scope.langGraph = function(){
-  	$scope.loaded = true;
+  	$scope.langGraphLoaded = true;
   }
 });
 

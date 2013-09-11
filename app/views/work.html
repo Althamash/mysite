@@ -13,46 +13,49 @@
 <div class="chart-line ten"></div> -->
 
 <header class="work-header">
-	<p><big>I</big>  am a Front-End Web developer who specializes mainly in HTML, CSS and Javascript. I have worked with a bunch of libraries and tools like Jquery, Grunt etc., </p>
+	<p>I am a <b>Front-End Web developer</b> who specializes mainly in HTML, CSS and Javascript. I have worked with a bunch of libraries and tools like Jquery, Bootstrap etc., </p>
 </header>
-<div class="language-graph" ng-init="langGraph()">
-	<div class="graph-heading">Experience</div>
-	<div class="bar html" ng-class="{full: loaded}"></div>
-	<div class="bar css" ng-class="{full: loaded}"></div>
-	<div class="bar js" ng-class="{full: loaded}"></div>
-	
-	<div class="left-bar">
-		<div class="years">1 yr</div>
-		<div class="years">6 mths</div>
+<div class="graph-container">
+	<div class="language-graph" ng-init="langGraph()">
+		<div class="graph-heading">Experience</div>
+		<div class="bar html" ng-class="{full: langGraphLoaded}"></div>
+		<div class="bar css" ng-class="{full: langGraphLoaded}"></div>
+		<div class="bar js" ng-class="{full: langGraphLoaded}"></div>
+		
+		<div class="left-bar">
+			<div class="years">1 yr</div>
+			<div class="years">6 mths</div>
+		</div>
+		<div class="bottom-bar">
+			<div class="languages html">HTML5</div>
+			<div class="languages css">CSS3</div>
+			<div class="languages js">Javascript</div>
+		</div>
 	</div>
-	<div class="bottom-bar">
-		<div class="languages html">HTML5</div>
-		<div class="languages css">CSS3</div>
-		<div class="languages js">Javascript</div>
+
+	<div class="other-graph" init-graph>
+		<div class="graph-heading">Familiarity</div>
+		<div class="top-bar">
+			<div class="percentage">0%</div>
+			<div class="percentage">20%</div>
+			<div class="percentage">40%</div>
+			<div class="percentage">60%</div>
+			<div class="percentage">80%</div>
+			<div class="percentage">100%</div>
+		</div>
+		<div class="left-bar">
+			<div class="ltf">AngularJs</div>
+			<div class="ltf">Bootstrap</div>
+			<div class="ltf">GruntJs</div>
+			<div class="ltf">Jquery</div>
+		</div>
+		<div class="bar angular one" ng-class="{full: otherGraphLoaded}"></div>
+		<div class="bar bootstrap two" ng-class="{full: otherGraphLoaded}"></div>
+		<div class="bar grunt three" ng-class="{full: otherGraphLoaded}"></div>
+		<div class="bar jquery four" ng-class="{full: otherGraphLoaded}"></div>
 	</div>
 </div>
 
-<div class="other-graph">
-	<div class="graph-heading">Familiarity</div>
-	<div class="top-bar">
-		<div class="percentage">0%</div>
-		<div class="percentage">20%</div>
-		<div class="percentage">40%</div>
-		<div class="percentage">60%</div>
-		<div class="percentage">80%</div>
-		<div class="percentage">100%</div>
-	</div>
-	<div class="left-bar">
-		<div class="ltf">Bootstrap</div>
-		<div class="ltf">Jquery</div>
-		<div class="ltf">AngularJS</div>
-		<div class="ltf">Grunt</div>
-	</div>
-	<div class="bar one"></div>
-	<div class="bar two"></div>
-	<div class="bar three"></div>
-	<div class="bar four"></div>
-</div>
 
 <div class="divider"></div>
 
@@ -63,6 +66,13 @@
 </div>
 
 <div class="resume">
-	<span>My Resume</span>
+	<div class="resume-icon">_ _ _</div>
+	<span class="my-resume">My Resume</span>
+	<div class="vd">
+		(<span class="view"> View</span>
+		<span>|</span>
+		<span class="download">Download </span>)
+	</div>
+	
 </div>
 

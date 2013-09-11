@@ -25,3 +25,18 @@ app.directive('navAction', function(){
 		}
 	};
 });
+
+app.directive('initGraph', function($window){
+	return {
+		restrict: 'A',
+		link: function(scope, element, attrs){
+			angular.element($window).bind('scroll', function(e){
+				console.log(scope.otherGraphLoaded);
+				if(this.pageYOffset > 500){
+					scope.otherGraphLoaded = true;
+					scope.$apply();
+				}
+			});
+		}
+	};
+});
