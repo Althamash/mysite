@@ -367,7 +367,7 @@ LAYOUT: WORK PAGE
   z-index: 1;
 }
 .language-graph .bar.html{
-  left: 21%;
+  left: 20%;
   background-color: #bf701d;
 }
 .language-graph .bar.css{
@@ -375,7 +375,7 @@ LAYOUT: WORK PAGE
   background-color: #348ca9;
 }
 .language-graph .bar.js{
-  left: 71%;
+  left: 74%;
   background-color: #c5a721;
 }
 .language-graph .bar.html.full{
@@ -561,11 +561,15 @@ Grunt = #E48632;
 }
 
 
-.divider{
+/*.divider{
   width: 70%;
   height: 2px;
   margin: 40px auto;
   background-color: rgba(0,0,0,0.2);
+}*/
+
+.company{
+  margin-top: 50px;
 }
 
 .company .service-date{

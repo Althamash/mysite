@@ -5,7 +5,7 @@
 			"months": [
 				{
 					"month": "",
-					"image": "images/sb.png",
+					"image": "sb.png",
 					"title": "Working @ SOURCEBITS",
 					"text": "Some text here!!!",
 					"class": "hide"
@@ -17,19 +17,19 @@
 			"months": [
 				{
 					"month": "OCT",
-					"image": "images/sb2.png",
+					"image": "sb2.png",
 					"title": "My First Job",
 					"text": "Some text here!!!"
 				},
 				{
 					"month": "SEP",
-					"image": "images/degree.png",
+					"image": "degree.png",
 					"title": "Launched My First Website",
 					"text": "Some text here!!!"
 				},
 				{
 					"month": "JUL",
-					"image": "images/degree.png",
+					"image": "degree.png",
 					"title": "Graduated from College",
 					"text": "Some text here!!!"
 				}
@@ -40,7 +40,7 @@
 			"months": [
 				{
 					"month": "APR",
-					"image": "images/al-ameen.png",
+					"image": "al-ameen.png",
 					"title": "Finished High School",
 					"text": "Some text here!!!"
 				}

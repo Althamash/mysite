@@ -380,6 +380,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .about-timeline .content-container .title{
   font-size: 24px;
+  line-height: 28px;
   padding: 0 0 10px 0;
   text-indent: 12px;
   color: #1cba93;
@@ -444,6 +445,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   border: 1px solid #ddd;
   margin: 80px auto 0 auto;
   padding: 12px;
+  cursor: pointer;
 }
 
 .sample img{
@@ -462,6 +464,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .sample blockquote{
   text-indent: 72px;
   padding: 10px 0;
+}
+.sample .tags{
+  clear: both;
 }
 
 .sample .tag{
