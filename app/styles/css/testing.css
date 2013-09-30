@@ -375,7 +375,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   float: right;
   border-radius: 50%;
   width: 20%;
-  height: 100%;
+  height: auto;
 }
 
 .about-timeline .content-container .title{
@@ -467,6 +467,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .sample .tags{
   clear: both;
+  margin: 10px 0;
 }
 
 .sample .tag{

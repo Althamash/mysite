@@ -471,7 +471,7 @@ LAYOUT: WORK PAGE
 .other-graph .bar{
   position: absolute;
   left: 116px;
-  width: 10px;
+  width: 1%;
   height: 20px;
   border-radius: 0 4px 4px 0;
   -webkit-transition: all 0.8s ease;
