@@ -1,0 +1,222 @@
+<!doctype html>
+<html ng-app="Demo" ng-controller="AppController">
+<head>
+    <meta charset="utf-8" />
+ 
+    <title>AngularJS Routing</title>
+ 
+    <style type="text/css">
+ 
+        a {
+            color: #333333 ;
+            }
+ 
+        a.on {
+            color: #CC0000 ;
+            font-weight: bold ;
+            text-decoration: none ;
+            }
+ 
+    </style>
+</head>
+<body>
+ 
+    <h1>
+        AngularJS Routing
+    </h1>
+ 
+    <p>
+        Current Render Action:
+ 
+        <!--
+            We're going to bind the content of the Strong element to
+            the scope-level model, renderAction. Then, when this gets
+            set in the Controller, it will be updated here.
+        -->
+        <strong ng-bind="renderAction">Unknown</strong>
+    </p>
+ 
+    <!--
+        For the navigation, we'll be conditionally adding the "on"
+        class based on the state of the current scope.
+    -->
+    <p>
+        <a href="#/home" ng-class="{ on: isHome }">Home</a> -
+        <a href="#/friends" ng-class="{ on: isFriends }">Friends</a> -
+        <a href="#/contact/ben" ng-class="{ on: isContact }">Contact</a>
+    </p>
+ 
+    <!--
+        When the route changes, we're going to be setting up the
+        renderPath - an array of values that help define how the
+        page is going to be rendered. We can use these values to
+        conditionally show / load parts of the page.
+    -->
+    <div ng-switch on="renderPath[ 0 ]">
+ 
+        <!-- Home Content. -->
+        <div ng-switch-when="home">
+ 
+            <p>
+                This is the homepage content.
+            </p>
+ 
+            <p>
+                Sub-path: <em>{{ renderPath[ 1 ] }}</em>.
+            </p>
+ 
+        </div>
+ 
+        <!-- Friends Content. -->
+        <div ng-switch-when="friends">
+ 
+            <p>
+                Here are my friends!
+            </p>
+ 
+            <p>
+                Sub-path: <em>{{ renderPath[ 1 ] }}</em>.
+            </p>
+ 
+        </div>
+ 
+        <!-- Contact Content. -->
+        <div ng-switch-when="contact">
+ 
+            <p>
+                Feel free to contact me.
+            </p>
+ 
+            <p>
+                Sub-path: <em>{{ renderPath[ 1 ] }}</em>.
+            </p>
+ 
+            <p>
+                Username: <em>{{ username }}</em>
+            </p>
+ 
+        </div>
+ 
+    </div>
+ 
+ 
+    <!-- Load AngularJS from the CDN. -->
+    <script
+        type="text/javascript"
+        src="components/angular/angular.min.js">
+    </script>
+    <script type="text/javascript">
+ 
+ 
+        // Create an application module for our demo.
+        var Demo = angular.module( "Demo", [] );
+ 
+        // Configure the routing. The $routeProvider will be
+        // automatically injected into the configurator.
+        Demo.config(
+            function( $routeProvider ){
+ 
+                // Typically, when defining routes, you will map the
+                // route to a Template to be rendered; however, this
+                // only makes sense for simple web sites. When you
+                // are building more complex applications, with
+                // nested navigation, you probably need something more
+                // complex. In this case, we are mapping routes to
+                // render "Actions" rather than a template.
+                $routeProvider
+                    .when(
+                        "/home",
+                        {
+                            action: "home.default"
+                        }
+                    )
+                    .when(
+                        "/friends",
+                        {
+                            action: "friends.list"
+                        }
+                    )
+                    .when(
+                        "/contact/:username",
+                        {
+                            action: "contact.form"
+                        }
+                    )
+                    .otherwise(
+                        {
+                            redirectTo: "/dashboard"
+                        }
+                    )
+
+                ;
+ 
+            }
+        );
+ 
+ 
+        // -------------------------------------------------- //
+        // -------------------------------------------------- //
+ 
+ 
+        // Define our root-level controller for the application.
+        Demo.controller(
+            "AppController",
+            function( $scope, $route, $routeParams ){
+ 
+                // Update the rendering of the page.
+                render = function(){
+ 
+                    // Pull the "action" value out of the
+                    // currently selected route.
+                    var renderAction = $route.current.action;
+                    console.log(renderAction);
+                    // Also, let's update the render path so that
+                    // we can start conditionally rendering parts
+                    // of the page.
+                    var renderPath = renderAction.split( "." );
+ 
+                    // Grab the username out of the params.
+                    //
+                    // NOTE: This will be undefined for every route
+                    // except for the "contact" route; for the sake
+                    // of simplicity, I am not exerting any finer
+                    // logic around it.
+                    var username = ($routeParams.username || "");
+ 
+                    // Reset the booleans used to set the class
+                    // for the navigation.
+                    var isHome = (renderPath[ 0 ] == "home");
+                    var isFriends = (renderPath[ 0 ] == "friends");
+                    var isContact = (renderPath[ 0 ] == "contact");
+ 
+                    // Store the values in the model.
+                    $scope.renderAction = renderAction;
+                    $scope.renderPath = renderPath;
+                    $scope.username = username;
+                    $scope.isHome = isHome;
+                    $scope.isFriends = isFriends;
+                    $scope.isContact = isContact;
+ 
+                };
+ 
+                // Listen for changes to the Route. When the route
+                // changes, let's set the renderAction model value so
+                // that it can render in the Strong element.
+                $scope.$on(
+                    "$routeChangeSuccess",
+                    function( $currentRoute, $previousRoute ){
+ 
+                        // Update the rendering.
+                        render();
+ 
+                    }
+                );
+ 
+            }
+        );
+ 
+ 
+    </script>
+ 
+</body>
+</html>

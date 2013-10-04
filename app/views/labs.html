@@ -1,16 +1,35 @@
 <div class="body-nav labs"><div>&#xe08c;</div></div>
-Some of my cool stuff will be showcased here!!
-<div class="sample clearfix">
-	<img src="images/sb.png">
-	<h2>Sample Title</h2>
-	<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
-	<div class="tags">
-		<div class="tag">CSS</div>
-		<div class="tag">Canvas</div>
-		<div class="tag">Javascript</div>
-		<div class="tag">Animation</div>
-		<div class="tag">Webgl</div>
+<div class="body-inner">
+	<h1 class="page-title labs">Laboratory</h1>
+	<div ng-show="showDemoList">
+		<p>Some of my cool stuff will be showcased here!!</p>
+		<div class="sample clearfix">
+			<img src="images/sb.png">
+			<h2>Sample Title</h2>
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+			<div class="tags">
+				<div class="tag">CSS</div>
+				<div class="tag">Canvas</div>
+				<div class="tag">Javascript</div>
+				<div class="tag">Animation</div>
+				<div class="tag">Webgl</div>
+			</div>
+			<a href="#/labs/demo1">demo1</a>
+		</div>
+		<div class="sample clearfix">
+			<img src="images/sb.png">
+			<h2>Sample Title</h2>
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+			<div class="tags">
+				<div class="tag">CSS</div>
+				<div class="tag">Canvas</div>
+				<div class="tag">Javascript</div>
+				<div class="tag">Animation</div>
+				<div class="tag">Webgl</div>
+			</div>
+			<a href="#/labs/demo2">demo2</a>
+		</div>
 	</div>
-	
+	<!-- <div class="iframe-container" load-iframe></div> -->
+	<iframe ng-src="{{ifSrc}}" ng-show="showDemo" class="labs-iframe" is-loaded></iframe>
 </div>
-<iframe src="views/blog.html"></iframe>

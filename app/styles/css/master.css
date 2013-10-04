@@ -16,6 +16,7 @@ MASTER: IMPORTING STYLESHEETS
 -------------------------------------------------*/
 @import url("../../components/reset-css/reset.css");
 @import url("mediaqueries.css");
+@import url("module.css");
 @import url("layout.css");
 @import url("testing.css");
 /*

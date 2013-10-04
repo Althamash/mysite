@@ -1,29 +1,31 @@
 <div class="body-nav about"><div>&#xe0f8;</div></div>
-<div class="about-short">
-	<h1>Sample Heading</h1>
-	<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-</div>
-<div class="about-timeline" ng-init="getTimelineData()">
-	<div class="line-container">
-		<div class="line"></div>
+<div class="body-inner">
+	<h1 class="page-title about">About</h1>
+	<div class="about-short">
+		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
 	</div>
+	<div class="about-timeline" ng-init="getTimelineData()">
+		<div class="line-container">
+			<div class="line"></div>
+		</div>
 
-	<div class="content-container" ng-repeat="data in timelineData">
-		<div class="year">{{data.year}}</div>
-		<div class="content" ng-repeat="months in data.months">
-			<div class="month {{months.class}}">{{months.month}}</div>
-			<div class="bullet"></div>
-			<div class="content-inner clearfix">
-				<img class="image" ng-src="images/{{months.image}}">
-				<div class="title">
-					{{months.title}}
+		<div class="content-container" ng-repeat="data in timelineData">
+			<div class="year">{{data.year}}</div>
+			<div class="content" ng-repeat="months in data.months">
+				<div class="month {{months.class}}">{{months.month}}</div>
+				<div class="bullet"></div>
+				<div class="content-inner clearfix">
+					<img class="image" ng-src="images/{{months.image}}">
+					<div class="title">
+						{{months.title}}
+					</div>
+					
+					<!-- <div class="clearfix"></div> -->
+					<div class="text">
+						{{months.text}}
+					</div>
+					
 				</div>
-				
-				<!-- <div class="clearfix"></div> -->
-				<div class="text">
-					{{months.text}}
-				</div>
-				
 			</div>
 		</div>
 	</div>
