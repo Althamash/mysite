@@ -102,9 +102,6 @@ background-repeat: repeat;
 
 */
 
-.body-inner{
-  padding: 20px 0;
-}
 .page-title{
   display: inline-block;
   position: relative;
@@ -366,5 +363,20 @@ background-repeat: repeat;
 .labs-iframe{
   width: 100%;
   height: auto;
+}
+
+.show-menu{
+  position: absolute;
+  top: 24px;
+  left: 5%;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 8px;
+  color: #FFF;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  text-align: center;
+  cursor: pointer;
 }
 

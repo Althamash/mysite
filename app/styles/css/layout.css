@@ -16,7 +16,7 @@ LAYOUT: MAIN NAVIGATION
   left: 0;
   margin: 24px;
   margin-left: 11%;
-  width: 300px;
+  width: 280px;
   color: #888;
   line-height: 3.4em;
   background: white;
@@ -45,6 +45,21 @@ LAYOUT: MAIN NAVIGATION
   font-family: 'Cabin Condensed';
   padding: 30px;
   font-size: 2.6em;
+  text-align: center;
+}
+
+/* Main Navigation */
+
+.nav-block .nav-block-content .main-nav-list{
+  transition: height .5s ease;
+  -webkit-transition: height .5s ease;
+  -moz-transition: height .5s ease;
+  -o-transition: height .5s ease;
+  -ms-transition: height .5s ease;
+  height: 324px;
+}
+.nav-block .nav-block-content .main-nav-list.shrink{
+  height: 0px;
 }
 
 .nav-block .nav-block-content .main-nav-list .list-item {
@@ -52,84 +67,84 @@ LAYOUT: MAIN NAVIGATION
   max-height: 54px;
 }
 
-.nav-block .nav-block-content .main-nav-list .list-item div {
+.main-nav-list .list-item div {
   font-size: 1.8em;
   height: 54px;
 }
 
-.nav-block .main-nav-list .list-item.home .main-icons {
+.main-nav-list .list-item.home .main-icons {
   background-color: #b3c833;
 }
 
-.nav-block .main-nav-list .list-item.home:hover div, .nav-block .main-nav-list .list-item.home.active div {
+.main-nav-list .list-item.home:hover div, .main-nav-list .list-item.home.active div {
   background-color: #b3c833;
 }
 
-.nav-block .main-nav-list .list-item.home:hover div .main-nav-text, .nav-block .main-nav-list .list-item.home.active div .main-nav-text {
+.main-nav-list .list-item.home:hover div .main-nav-text, .main-nav-list .list-item.home.active div .main-nav-text {
   color: #fff;
 }
 
-.nav-block .main-nav-list .list-item.about .main-icons {
+.main-nav-list .list-item.about .main-icons {
   background-color: #ce5043;
 }
 
-.nav-block .main-nav-list .list-item.about:hover div, .nav-block .main-nav-list .list-item.about.active div {
+.main-nav-list .list-item.about:hover div, .main-nav-list .list-item.about.active div {
   background-color: #ce5043;
 }
 
-.nav-block .main-nav-list .list-item.about:hover div .main-nav-text, .nav-block .main-nav-list .list-item.about.active div .main-nav-text {
+.main-nav-list .list-item.about:hover div .main-nav-text, .main-nav-list .list-item.about.active div .main-nav-text {
   color: #fff;
 }
 
-.nav-block .main-nav-list .list-item.work .main-icons {
+.main-nav-list .list-item.work .main-icons {
   background-color: #fb8521;
 }
 
-.nav-block .main-nav-list .list-item.work:hover div, .nav-block .main-nav-list .list-item.work.active div {
+.main-nav-list .list-item.work:hover div, .main-nav-list .list-item.work.active div {
   background-color: #fb8521;
 }
 
-.nav-block .main-nav-list .list-item.work:hover div .main-nav-text, .nav-block .main-nav-list .list-item.work.active div .main-nav-text {
+.main-nav-list .list-item.work:hover div .main-nav-text, .main-nav-list .list-item.work.active div .main-nav-text {
   color: #fff;
 }
 
-.nav-block .main-nav-list .list-item.labs .main-icons {
+.main-nav-list .list-item.labs .main-icons {
   background-color: #1aa1e1;
 }
 
-.nav-block .main-nav-list .list-item.labs:hover div, .nav-block .main-nav-list .list-item.labs.active div {
+.main-nav-list .list-item.labs:hover div, .main-nav-list .list-item.labs.active div {
   background-color: #1aa1e1;
 }
 
-.nav-block .main-nav-list .list-item.labs:hover div .main-nav-text, .nav-block .main-nav-list .list-item.labs.active div .main-nav-text {
+.main-nav-list .list-item.labs:hover div .main-nav-text, .main-nav-list .list-item.labs.active div .main-nav-text {
   color: #fff;
 }
 
-.nav-block .main-nav-list .list-item.connect .main-icons {
+.main-nav-list .list-item.connect .main-icons {
   background-color: #5e5ca6;
 }
 
-.nav-block .main-nav-list .list-item.connect:hover div, .nav-block .main-nav-list .list-item.connect.active div {
+.main-nav-list .list-item.connect:hover div, .nav-block .main-nav-list .list-item.connect.active div {
   background-color: #5e5ca6;
 }
 
-.nav-block .main-nav-list .list-item.connect:hover div .main-nav-text, .nav-block .main-nav-list .list-item.connect.active div .main-nav-text {
+.main-nav-list .list-item.connect:hover div .main-nav-text, .main-nav-list .list-item.connect.active div .main-nav-text {
   color: #fff;
 }
 
-.nav-block .main-nav-list .list-item.blog .main-icons {
+.main-nav-list .list-item.blog .main-icons {
   background-color: #658092;
 }
 
-.nav-block .main-nav-list .list-item.blog:hover div, .nav-block .main-nav-list .list-item.blog.active div {
+.main-nav-list .list-item.blog:hover div, .main-nav-list .list-item.blog.active div {
   background-color: #658092;
 }
 
-.nav-block .main-nav-list .list-item.blog:hover div .main-nav-text, .nav-block .main-nav-list .list-item.blog.active div .main-nav-text {
+.main-nav-list .list-item.blog:hover div .main-nav-text, .main-nav-list .list-item.blog.active div .main-nav-text {
   color: #fff;
 }
 
-.nav-block .main-nav-list .list-item .main-icons {
+.main-nav-list .list-item .main-icons {
   display: inline-block;
   height: 54px;
   width: 18%;
@@ -138,17 +153,81 @@ LAYOUT: MAIN NAVIGATION
   font-size: 0.9em;
 }
 
-.nav-block .main-nav-list .list-item .main-nav-text {
+.main-nav-list .list-item .main-nav-text {
   padding: 0 0 0 20px;
   font-family: 'Roboto';
   font-size: 0.75em;
   color: #555;
 }
 
+/* Main Navigation Small*/
+
+.nav-block .nav-block-content .main-nav-list.small{
+  background-color: #EAEAEA;
+}
+.main-nav-list.small .list-item .main-icons{
+  background-color: #EAEAEA;
+  color: #999;
+  text-shadow: 0 -1px rgba(0,0,0,0.9);
+}
+
+.main-nav-list.small .list-item:active .main-icons{
+  background-color: #fff;
+}
+
+.main-nav-list.small li.list-item.home:active div, .main-nav-list.small li.list-item.about:active div, .main-nav-list.small li.list-item.work:active div, .main-nav-list.small li.list-item.labs:active div, .main-nav-list.small li.list-item.connect:active div, .main-nav-list.small li.list-item.blog:active div{
+  background-color: #fff;
+}
+
+.main-nav-list.small .list-item.home.active .main-icons, .main-nav-list.small .list-item.home.active .main-nav-text{
+  color: #b3c833;
+}
+.main-nav-list.small .list-item.about.active .main-icons, .main-nav-list.small .list-item.about.active .main-nav-text{
+  color: #ce5043;
+}
+.main-nav-list.small .list-item.work.active .main-icons, .main-nav-list.small .list-item.work.active .main-nav-text{
+  color: #fb8521;
+}
+.main-nav-list.small .list-item.labs.active .main-icons, .main-nav-list.small .list-item.labs.active .main-nav-text{
+  color: #1aa1e1;
+}
+.main-nav-list.small .list-item.connect.active .main-icons, .main-nav-list.small .list-item.connect.active .main-nav-text{
+  color: #5e5ca6;
+}
+.main-nav-list.small .list-item.blog.active .main-icons, .main-nav-list.small .list-item.blog.active .main-nav-text{
+  color: #658092;
+}
+
+
+
+.main-nav-list.small .list-item.home.active div, .main-nav-list.small .list-item.about.active div, .main-nav-list.small .list-item.work.active div, .main-nav-list.small .list-item.labs.active div, .main-nav-list.small .list-item.connect.active div, .main-nav-list.small .list-item.blog.active div, .main-nav-list.small .list-item.home:hover div, .main-nav-list.small .list-item.about:hover div, .main-nav-list.small .list-item.work:hover div, .main-nav-list.small .list-item.labs:hover div, .main-nav-list.small .list-item.connect:hover div, .main-nav-list.small .list-item.blog:hover div{
+  background-color: transparent;
+}
+
+.main-nav-list.small .list-item.active div .main-nav-text, .main-nav-list.small .list-item:hover div .main-nav-text {
+  color: #555;
+}
+
+.nav-block .nav-quotes{
+  margin: 28px 0 0 0;
+  padding: 18px;
+}
+
+.nav-block .nav-quotes blockquote{
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.nav-block .nav-quotes h3{
+  text-align: right;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
 .body-block {
   margin: 24px;
   margin-left: 11%;
-  padding-left: 330px;
+  padding-left: 300px;
   position: relative;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -158,12 +237,16 @@ LAYOUT: MAIN NAVIGATION
   overflow: hidden;
 }
 
+.body-inner{
+  padding: 20px 0;
+}
+
 .body-block-content {
   display: inline-block;
   padding: 0px 20px 20px 20px;
   font-size: 18px;
-  max-width: 700px;
-  width: 700px;
+  max-width: 730px;
+  width: 730px;
   min-width: 440px;
   min-height: 170px;
   background-color: #fff;
@@ -194,6 +277,37 @@ LAYOUT: MAIN NAVIGATION
 }
 
 
+
+/*-------------------------------------------------
+LAYOUT: HOME PAGE
+-------------------------------------------------*/
+/*#96AC00 */
+
+.home-content{
+  padding-left: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.hello{
+  font-family: 'Oxygen';
+  font-size: 1.5em;
+  margin: 50px 0 30px 0;
+}
+
+.my-pic{
+  float: right;
+}
+
+.my-name{
+  font-size: 3em;
+  line-height: 1.4em;
+  width: 70%;
+  text-align: left;
+  color: #96AC00;
+  text-shadow: 0 -2px rgba(0,0,0,0.6);
+  margin: 30px 0;
+}
 
 /*-------------------------------------------------
 LAYOUT: WORK PAGE
@@ -916,14 +1030,14 @@ LAYOUT: CONNECT PAGE
 .gmail{
   position: relative;
   float: left;
-  padding: 8px 8px 8px 4px;
+  padding: 12px 12px 8px 18px;
   font-size: 20px;
   text-decoration: none;
-  color: #fff;
-  /*margin-left: 30px;*/
+  color: #FFF;
+  margin-left: 30px;
   margin: 14px 0;
-  background-color: #e04c40;
-  /*border-radius: 8px;*/
+  background-color: #E04C40;
+  border-radius: 24px;
 }
 .gmail span{
   padding: 5px 18px;
@@ -936,7 +1050,7 @@ LAYOUT: CONNECT PAGE
   content: '';
   position: absolute;
   top: 3px;
-  left: 0px;
+  left: 14px;
   width: 0px;
   height: 0px;
   border-left: 28px solid rgba(0, 0, 0, 0);
@@ -946,8 +1060,8 @@ LAYOUT: CONNECT PAGE
 .gmail:after{
   content: '';
   position: absolute;
-  top: 4px;
-  left: 8px;
+  top: 5px;
+  left: 22px;
   width: 0px;
   height: 0px;
   border-left: 20px solid rgba(0, 0, 0, 0);

@@ -55,6 +55,26 @@ var app = angular.module('angexpApp', [])
       });
   });
 
+app.run(function($rootScope, $window){
+  $rootScope.windowWidth = $window.innerWidth;
+  $rootScope.mainNav = angular.element(document.getElementById('mainNav'));
+  $rootScope.hideShowNav = function(){
+    if($rootScope.windowWidth > 880){
+      $rootScope.mainNav.removeClass('shrink');
+      console.log('shownav');
+    } else{
+      $rootScope.mainNav.addClass('shrink');
+      console.log('hidenav');
+    }
+  };
+  angular.element($window).bind('resize',function(){
+    $rootScope.windowWidth = $window.innerWidth;
+    $rootScope.$apply('windowWidth');
+    $rootScope.hideShowNav();
+    // console.log($rootScope.windowWidth);
+ });
+})
+
 /*
 --------------------------------
   Controllers
@@ -81,18 +101,19 @@ app.controller('workCtrl', function ($scope) {
   }
 });
 
-app.controller('navCtrl', function ($scope, $location) {
+app.controller('navCtrl', function ($scope, $location, $rootScope) {
   $scope.changeView = function(view){
     $scope.$apply($location.path(view));
   };
   $scope.$on("$routeChangeSuccess",function(){
     $scope.Init();
   });
-  
+  console.log($rootScope);
   $scope.path = 'home';
   $scope.Init = function(){
-    $scope.path = $location.path().substr(1);
+    $scope.path = $location.path().substr(1).split('/')[0];
     $scope.path === '' ? $scope.path ='home' : $scope.path;
+    $rootScope.hideShowNav();
   };
 });
 
@@ -130,9 +151,6 @@ app.controller('labsCtrl', function ($scope, $http, $route, $routeParams) {
     if(!isEmpty($routeParams)){
       $scope.showDemoList = false;
       $scope.showDemo = true;
-      // console.log($route.current.action);
-      // console.log($route.current.action.split( "." ));
-      // console.log($routeParams.demo || "");
       $scope.ifSrc = 'views/demos/' + ($routeParams.demo || "") + '.html';
     }
   });
@@ -149,7 +167,12 @@ app.directive('navAction', function(){
     restrict: 'A',
     link: function(scope, element, attrs){
       element.bind('click', function(){
+        var smallMenu = angular.element(element.parent().parent().find('div')[0]);
         scope.selectNav(attrs.navAction);
+        element.addClass('active');
+        if(smallMenu.hasClass('shown')){
+          smallMenu.removeClass('shown');
+        }
         scope.changeView(attrs.navAction);
       });
       scope.selectNav = function(view){
@@ -159,11 +182,7 @@ app.directive('navAction', function(){
           navArray.push(element.parent().children().eq(i));
         }
         for(var i = 0; i < navLength; i++){
-          if(navArray[i].hasClass('active')){
-            navArray[i].removeClass('active');
-          } else if(navArray[i].hasClass(view)) {
-            navArray[i].addClass('active');
-          }
+          navArray[i].removeClass('active');
         }
       };
     }
@@ -195,4 +214,20 @@ app.directive('isLoaded', function(){
   }
 });
 
+app.directive('showNav', function(){
+  return {
+    restrict: 'A',
+    link: function(scope, element, attrs){
+      element.bind('click', function(){
+        if(element.hasClass('shown')){
+          console.log(element.parent().find('ul').addClass('shrink'));
+          element.removeClass('shown');
+        } else{
+          console.log(element.parent().find('ul').removeClass('shrink'));
+          element.addClass('shown');
+        }
+      });
+    }
+  }
+});
 

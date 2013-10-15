@@ -17,13 +17,9 @@
         <!-- endbuild -->
 </head>
   <body class="container" ng-app="angexpApp">
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    <![endif]-->
 
     <!--[if lt IE 9]>
-      <script src="bower_components/es5-shim/es5-shim.js"></script>
-      <script src="bower_components/json3/lib/json3.min.js"></script>
+      <p class="chromeframe">Dear Lord! are you still using an outdated browser? <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
@@ -32,7 +28,8 @@
         <div class="nav-block-content">
           <!-- <img src="images/sample.jpg" class="main-profile-img"> -->
           <h1 class="main-my-name">Muhammed Althamash</h1>
-          <ul class="main-nav-list">
+          <div class="icon show-menu hide" show-nav>&#xe0b1;</div>
+          <ul id="mainNav" class="main-nav-list" ng-class="{small: windowWidth<=880}">
             <li class="list-item home" nav-action="home" ng-class="{active: path=='home'}">
               <div><span class="icon main-icons">&#xe0e9;</span><span class="main-nav-text">Home</span></div>
             </li>
@@ -60,6 +57,10 @@
           src="http://iheartquotes.com/api/v1/random?format=html&max_lines=4&max_characters=320&width=225&height=165"
           style="display: none">
         </iframe>
+      </div>
+      <div class="nav-quotes">
+        <blockquote>“Be yourself; everyone else is already taken.”</blockquote>
+        <h3>- Oscar Wilde</h3>
       </div>
     </div>
 

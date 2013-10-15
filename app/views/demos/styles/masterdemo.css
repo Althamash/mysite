@@ -1,0 +1,30 @@
+/*-------------------------------------------------
+MASTER: COMMON STYLES FOR ALL DEMOS
+-------------------------------------------------*/
+@import url("../../../components/reset-css/reset.css");
+
+body {
+  background-color: #fff;
+  font-family: 'Imprima', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+}
+.icon {
+  font-family: "Icons";
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cantora One';
+}
+b{
+	font-family: 'Oxygen', 'Tahoma', 'Arial', serif;
+	font-weight: bold;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hide{
+	display: none;
+}

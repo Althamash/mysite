@@ -1,25 +1,13 @@
 {
 	"data": [
 		{
-			"year": "Now",
+			"year": "1991",
 			"months": [
 				{
-					"month": "",
-					"image": "sb.png",
-					"title": "Working @ SOURCEBITS",
-					"text": "Some text here!!!",
-					"class": "hide"
-				}
-			]
-		},
-		{
-			"year": "2012",
-			"months": [
-				{
-					"month": "OCT",
+					"month": "MAR",
 					"image": "sb2.png",
-					"title": "My First Job",
-					"text": "Some text here!!!"
+					"title": "I was Born",
+					"text": "A healthy baby boy is born on March 1991 in Bangalore - India."
 				},
 				{
 					"month": "SEP",
@@ -43,6 +31,18 @@
 					"image": "al-ameen.png",
 					"title": "Finished High School",
 					"text": "Some text here!!!"
+				}
+			]
+		},
+		{
+			"year": "Now",
+			"months": [
+				{
+					"month": "",
+					"image": "sb.png",
+					"title": "Working @ SOURCEBITS",
+					"text": "Some text here!!!",
+					"class": "hide"
 				}
 			]
 		}
